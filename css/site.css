@@ -963,8 +963,8 @@ tr:nth-child(even){background-color: #f2f2f2}
   transform:translate(5px,11px);
 }
 
-.img-comp-slider:before{content:'Escenario de recaída';position:absolute;top:165%;left:-10;font-family:'National 2 Web';text-align:right;font-weight:600;-webkit-transform:translate(-100%,calc(-50% - 60px));-ms-transform:translate(-100%,calc(-50% - 40px));transform:translate(-100%,calc(-50% - 40px));background:#39617D;color:#fff;width:150px;pointer-events:all;padding:.5rem .5rem;border-top-left-radius:3px;border-bottom-left-radius:3px}
-.img-comp-slider:after{content:'Escenario sin recaída';position:absolute;top:165%;left:46;font-family:'National 2 Web';text-align:left;font-weight:600;-webkit-transform:translate(4px,calc(-50% - 60px));-ms-transform:translate(4px,calc(-50% - 40px));transform:translate(4px,calc(-50% - 40px));text-align:left;background:#39617D;color:#fff;width:150px;pointer-events:all;padding:.5rem .5rem;border-top-right-radius:3px;border-bottom-right-radius:3px}
+.img-comp-slider:before{content:'Escenario de un solo brote';position:absolute;top:165%;left:-10;font-family:'National 2 Web';text-align:right;font-weight:600;-webkit-transform:translate(-100%,calc(-50% - 60px));-ms-transform:translate(-100%,calc(-50% - 40px));transform:translate(-100%,calc(-50% - 40px));background:#39617D;color:#fff;width:185px;pointer-events:all;padding:.5rem .5rem;border-top-left-radius:3px;border-bottom-left-radius:3px}
+.img-comp-slider:after{content:'Escenario con segundo brote';position:absolute;top:165%;left:46;font-family:'National 2 Web';text-align:left;font-weight:600;-webkit-transform:translate(4px,calc(-50% - 60px));-ms-transform:translate(4px,calc(-50% - 40px));transform:translate(4px,calc(-50% - 40px));text-align:left;background:#39617D;color:#fff;width:185px;pointer-events:all;padding:.5rem .5rem;border-top-right-radius:3px;border-bottom-right-radius:3px}
 
 
 

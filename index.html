@@ -442,13 +442,13 @@
 
                                 // return appropriate quarter for that month
                                 if (mon <= 2) {
-                                    return "T1-" + yr;
+                                    return "1T-" + yr;
                                 } else if (mon <= 5) {
-                                    return "T2-" + yr;
+                                    return "2T-" + yr;
                                 } else if (mon <= 8) {
-                                    return "T3-" + yr;
+                                    return "3T-" + yr;
                                 } else {
-                                    return "T4-" + yr;
+                                    return "4T-" + yr;
                                 }
                             
                             //just showing years
@@ -607,7 +607,7 @@
                             annotationSingle = [
                                 {
                                     note: {
-                                        label: countryName(selCountries[i]) + ": Escenario sin recaída"
+                                        label: countryName(selCountries[i]) + ": Escenario de un solo brote"
 
                                     },
                                     x: x(dateParser(date1)),
@@ -622,7 +622,7 @@
                             annotationDouble = [
                                 {
                                     note: {
-                                        label: countryName(selCountries[i]) + ": Escenario de recaída"
+                                        label: countryName(selCountries[i]) + ": Escenario con segundo brote"
                                     },
                                     x: x(dateParser(date2)),
                                     y: y(parseFloat(data1.filter(function (d) { return d.TIME == date2 && d.LOCATION == selCountries[i]; })[0].Scenario2Val)),
@@ -770,7 +770,7 @@
                                     .duration(100)
                                     .style("opacity", 1);
 
-                                var htmlText = "<b>" + d.TIME + "</b><br/><b>&nbsp;"+ countryName(d.LOCATION) + "</b><br>&nbsp;Escenario sin recaída: " +  Math.round(d.Scenario1Val*10)/10+ "%<br>&nbsp;Escenario de recaída: " +  Math.round(d.Scenario2Val*10)/10+ "%<br/><br/><b>&nbsp;" + d_1.Country + "</b><br>&nbsp;Escenario sin recaída: " +  Math.round(d_1.Scenario1Val *10)/10+ "%<br>&nbsp;Escenario de recaída: " +  Math.round(d_1.Scenario2Val*10)/10 + "%";
+                                var htmlText = "<b>" + d.TIME + "</b><br/><b>&nbsp;"+ countryName(d.LOCATION) + "</b><br>&nbsp;Escenario de un solo brote: " +  Math.round(d.Scenario1Val*10)/10+ "%<br>&nbsp;Escenario con segundo brote: " +  Math.round(d.Scenario2Val*10)/10+ "%<br/><br/><b>&nbsp;" + d_1.Country + "</b><br>&nbsp;Escenario de un solo brote: " +  Math.round(d_1.Scenario1Val *10)/10+ "%<br>&nbsp;Escenario con segundo brote: " +  Math.round(d_1.Scenario2Val*10)/10 + "%";
                                 
                                 if(event.pageX < width - 75){
                                     divMap.html(htmlText)
@@ -787,7 +787,7 @@
                                     .duration(100)
                                     .style("opacity", 1);
                                 
-                                var htmlText = "<b>" + d.TIME + "</b><br/><b>&nbsp;" + countryName(d.LOCATION) + "</b><br>Escenario sin recaída: " +  Math.round(d.Scenario1Val*10)/10 + "%<br>Escenario de recaída: " + Math.round( d.Scenario2Val*10)/10 + "%";
+                                var htmlText = "<b>" + d.TIME + "</b><br/><b>&nbsp;" + countryName(d.LOCATION) + "</b><br>Escenario de un solo brote: " +  Math.round(d.Scenario1Val*10)/10 + "%<br>Escenario con segundo brote: " + Math.round( d.Scenario2Val*10)/10 + "%";
 
                                 if (event.pageX < width - 75) {
                                     divMap.html(htmlText)
